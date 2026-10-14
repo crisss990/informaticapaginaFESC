@@ -3,59 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <title>UNAM</title>
-    <script src="java.js" defer></script>
+    <script type="text/javascript" src="java.js" defer></script>
 </head>
+<body>
+    <center>
+        <header style="color:blue; background-color:gold; display:flex; height:100px; align-items:center;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Escudo_UNAM_transparent.png" width="80" height="80" style="margin:10px;">
+            <h1 style="flex:2;">Universidad Nacional Autónoma de México</h1>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Escudo_UNAM_transparent.png" width="80" height="80" style="margin:10px;">
+        </header>
+    </center>
 
-<body style="margin:0; font-family:Arial, sans-serif;">
-
-    <header id="encabezado" style="color:blue; background-color:gold; display:flex; height:100px; align-items:center;">
-        <img src="unam.jpg" width="80" height="80" style="margin:10px;">
-        <h1 style="flex:2; text-align:center;">Universidad Nacional Autónoma de México</h1>
-        <img src="unam.jpg" width="80" height="80" style="margin:10px;">
-    </header>
-
-    <nav id="navegacion" style="background-color:aqua; height:60px;">
-        <ul style="display:flex; list-style:none; justify-content:center; margin:0; padding:20px;">
-            <li style="margin-right:20px; background-color:green; width:100px; text-align:center;">
-                <a href="https://www.google.com" style="color:white;">Google</a>
-            </li>
-            <li style="background-color:green; width:100px; text-align:center;">
-                <a href="https://www.google.com" style="color:white;">FES</a>
-            </li>
+    <nav style="background-color:aqua; height:60px;">
+        <ul style="display:flex; list-style:none; margin-left:400px; margin-top:0px; padding-top:0px;">
+            <a href="http://www.google.com" target="_blank" style="text-decoration:none;">
+                <li style="margin-left:20px; background-color:green; width:100px; text-align:center; margin-top:20px; color:white; line-height:30px;">Google</li>
+            </a>
+            <a href="http://www.google.com" target="_blank" style="text-decoration:none;">
+                <li style="margin-left:20px; background-color:green; width:100px; text-align:center; margin-top:20px; color:white; line-height:30px;">Fes</li>
+            </a>
         </ul>
     </nav>
 
     <div style="display:flex;">
-
-        <section id="seccion" style="flex:2; background-color:lime; height:300px;">
-            <div style="display:flex; align-items:center;">
+        <section id="seccionPrincipal" style="flex:2; background-color:lime; height:300px;">
+            <div style="display:flex; align-items:center; justify-content:center;">
                 <button style="height:40px; margin:10px;" onclick="masculino()">Masculino</button>
-
-                <h2 style="flex:2; text-align:center;">
-                    Facultad de Estudios Superiores Cuautitlán
-                </h2>
-
+                <h2 style="flex:2; text-align:center;">Facultad de Estudios Superiores Cuautitlán</h2>
                 <button style="height:40px; margin:10px;" onclick="femenino()">Femenino</button>
             </div>
-
-            <hr style="width:70%;">
-
-            <center>
-                <img src="unam.jpg" width="120" height="100">
-            </center>
+            <hr width="70%">
+            <center><img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Escudo_UNAM_transparent.png" width="120" height="100"></center>
         </section>
 
-        <aside id="datos" style="flex:2; background-color:silver; height:300px;">
+        <aside id="seccionAside" style="flex:2; background-color:silver; height:300px;">
             <h1 style="text-align:center;">Datos del alumno</h1>
         </aside>
-
     </div>
 
-    <footer id="pie" style="background-color:maroon; height:100px; color:white;">
-        <h1 style="text-align:center; margin-top:0; padding-top:20px;">
-            Licenciatura en informática
-        </h1>
+    <footer style="background-color:maroon; height:100px; color:white; display:flex; align-items:center; justify-content:center;">
+        <h1 style="margin-top:0px; font-size: 24px;">Licenciatura en informática</h1>
     </footer>
-
 </body>
 </html>
